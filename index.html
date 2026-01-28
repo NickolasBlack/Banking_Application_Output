@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bank Database</title>
+<style>
+body { font-family: monospace; }
+pre { margin-bottom: 30px; }
+</style>
+</head>
+<body>
+<b>Number Of Transactions: </b>100
+
+<h1>Bank Database</h1>
+<pre>
+<b>Name</b>                <b>SSN</b>         <b>Account#</b>     <b>Type</b>           <b>Status</b>   <b>Balance</b>        <b>Maturity Date</b>
+****************************************************************************************************
+Lewis Hamilton      123456789   310001       CD              Open    $67,640.70       4/4/2025
+Lewis Hamilton      123456789   310002       CD              Open    $72,657.78      8/15/2025
+Lewis Hamilton      123456789   310003       CD              Open    $44,665.56     11/23/2021
+Lewis Hamilton      123456789   110004       Checking        Open    $60,477.95
+Ben Miesalas        234567890   310005       CD              Open    $61,202.92      7/20/2019
+Ben Miesalas        234567890   510006       Brokerage       Open    $70,282.63
+Tom Brady           345678901   110007       Checking        Open    $10,802.37
+Tom Brady           345678901   110008       Checking        Open    $99,586.01
+Tom Brady           345678901   310009       CD              Open    $25,897.35       3/9/2029
+Anne Hathaway       456789012   410010       Commercial      Open    $66,722.27
+Anne Hathaway       456789012   310011       CD              Open    $40,442.96     11/23/2020
+Anne Hathaway       456789012   410012       Commercial      Open    $28,446.45
+Max Verstappen      567890123   310013       CD              Open    $39,949.37      7/28/2028
+Max Verstappen      567890123   510014       Brokerage       Open    $43,974.30
+LeVar Burton        678901234   310015       CD              Open    $52,187.21      7/29/2028
+LeVar Burton        678901234   410016       Commercial      Open    $34,976.32
+LeVar Burton        678901234   410017       Commercial      Open    $29,452.68
+LeVar Burton        678901234   310018       CD              Open    $15,142.64     10/15/2019
+Patrick Mahomes     789012345   110019       Checking        Open    $59,796.86
+Patrick Mahomes     128374950   310020       CD              Open    $79,589.31      10/8/2020
+Patrick Mahomes     128374950   110021       Checking        Open    $36,938.39
+Patrick Mahomes     128374950   510022       Brokerage       Open    $86,537.19
+Barack Obama        890123456   510023       Brokerage       Open    $23,249.32
+Barack Obama        890123456   310024       CD              Open     $8,269.57     10/11/2021
+Leonardo DiCaprio   894648589   310025       CD              Open    $12,623.75       3/8/2025
+Lamar Jackson       901234567   110026       Checking        Open    $21,095.44
+Lamar Jackson       901234567   110027       Checking        Open    $48,048.82
+Kate Blanchett      112233445   310028       CD              Open     $8,272.74      9/24/2019
+Kate Blanchett      223344556   410029       Commercial      Open    $58,631.62
+Kate Blanchett      223344556   210030       Savings         Open    $18,286.01
+Alexander Hamilton  253646739   110031       Checking        Open    $67,171.19
+Alexander Hamilton  253646739   510032       Brokerage       Open    $94,778.39
+Kevin Estre         374638239   310033       CD              Open    $92,778.77       3/7/2021
+Kevin Estre         374638239   310034       CD              Open    $51,486.78      3/14/2028
+Kevin Estre         374638239   110035       Checking        Open    $87,363.79
+Kevin Estre         374638239   110036       Checking        Open    $24,591.15
+Matthew Holliday    998877665   410037       Commercial      Open    $33,125.93
+Matthew Holliday    998877665   210038       Savings         Open     $7,405.56
+Matthew Holliday    998877665   110039       Checking        Open    $31,142.31
+Michael Jackson     887766554   210040       Savings         Open    $96,480.64
+Michael Jackson     887766554   510041       Brokerage       Open    $28,413.26
+Michael Jackson     887766554   210042       Savings         Open    $76,576.81
+****************************************************************************************************
+Total Number of Checking Accounts: 11
+Total Number of Savings Accounts: 4
+Total Number of CD Accounts: 15
+Total Number of Commercial Accounts: 6
+Total Number of Brokerage Accounts: 6
+Total Number of Credit Accounts: 6
+
+							Checking Account Total Balance: $547,014.27
+							Savings Account Total Balance: $198,749.01
+							CD Account Total Balance: $672,807.40
+							Commercial Account Total Balance: $251,355.28
+							Brokerage Account Total Balance: $347,235.08
+							Credit Account Total Balance: $0.00
+****************************************************************************************************
+							Total Number of Accounts: 42
+							Total Assests Under Management: $2,017,161.04
+****************************************************************************************************
+<pre>
+Transaction Requested: Withdrawl
+Client Name: Kevin Estre			Account Number: 110036
+Account Type: Checking
+Account Balance: $24,591.15		| Amount to Withdraw: $2,434.07
+New Balance: $22,157.08
+</pre>
+<pre>
+Transaction Requested: Withdrawl
+Client Name: Patrick Mahomes			Account Number: 110019
+Account Type: Checking
+Account Balance: $59,796.86		| Amount to Withdraw: $19,143.29
+New Balance: $40,653.57
+</pre>
+<pre>
+Transaction Requested: Client Information
+Client Name: Kevin Estre			Account Number: 110035
+Account Type: Checking
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kevin Estre         374638239   310033       CD              Open    $92,778.77       3/7/2021
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kevin Estre         374638239   310034       CD              Open    $51,486.78      3/14/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kevin Estre         374638239   110035       Checking        Open    $87,363.79
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kevin Estre         374638239   110036       Checking        Open    $22,157.08
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Withdrawl           $2,434.07   Done      $22,157.08                    
+
+****************************************************************************************************
+						Number of Accounts: 4
+</pre>
+<pre>
+Transaction Requested: Withdrawl
+Client Name: Michael Jackson			Account Number: 210040
+Account Type: Savings
+Account Balance: $96,480.64		| Amount to Withdraw: $11,572.05
+New Balance: $84,908.59
+</pre>
+<pre>
+Transaction Requested: Credit Transaction
+Client Name: LeVar Burton			Account Number: 410016
+Account Type: Commercial
+Current Balance: $34,976.32			Transaction Amount: $4,092.71
+Over spending limit reached for card level: Basic
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: LeVar Burton			Account Number: 410017
+Account Type: Commercial
+Current Balance: $29,452.68
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Matthew Holliday			Account Number: 210038
+Account Type: Savings
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   210038       Savings         Open     $7,405.56
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Matthew Holliday			Account Number: 210038
+Account Type: Savings
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   210038       Savings         Open     $7,405.56
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Transaction History $0.00       Done      $7,405.56 
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   210038       Savings         Open     $7,405.56
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Kevin Estre			Account Number: 310034
+Account Type: CD			Maturity Date: 3/14/2028
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: LeVar Burton			Account Number: 310015
+Account Type: CD			Maturity Date: 7/29/2028
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310015       CD              Open    $52,187.21      7/29/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Barack Obama			Account Number: 510023
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Barack Obama        890123456   510023       Brokerage       Open    $23,249.32          $0.00
+
+		******************** Investment Portfolio ********************
+Option: Put
+Contracts: 5
+Premium: $11.00		Total Value: $5,499.75
+
+Option: Put
+Contracts: 6
+Premium: $12.51		Total Value: $7,505.86
+
+Bond
+Quantity: 18
+Face Value: $1,000.00
+Coupon: 2.01549%
+Maturity Date: 1/28/2041	Total Value: $18,000.00
+
+Option: Put
+Contracts: 18
+Premium: $11.08		Total Value: $19,944.32
+
+Bond
+Quantity: 12
+Face Value: $1,000.00
+Coupon: 4.78496%
+Maturity Date: 1/28/2054	Total Value: $12,000.00
+
+Bond
+Quantity: 23
+Face Value: $1,000.00
+Coupon: 8.20716%
+Maturity Date: 1/28/2050	Total Value: $23,000.00
+
+Option: Put
+Contracts: 20
+Premium: $13.64		Total Value: $27,286.00
+
+Bond
+Quantity: 6
+Face Value: $1,000.00
+Coupon: 4.75217%
+Maturity Date: 1/28/2029	Total Value: $6,000.00
+
+Option: Call
+Contracts: 2
+Premium: $12.83		Total Value: $2,566.23
+
+Bond
+Quantity: 9
+Face Value: $1,000.00
+Coupon: 3.31227%
+Maturity Date: 1/28/2053	Total Value: $9,000.00
+
+****************************************************************************************************
+						Total Value: $130,802.16
+						Total Number of Shares: 5168
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Lewis Hamilton			Account Number: 310001
+Account Type: CD			Maturity Date: 4/4/2025
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Lewis Hamilton      123456789   310001       CD              Open    $67,640.70       4/4/2025
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Max Verstappen			Account Number: 310013
+Account Type: CD			Maturity Date: 7/28/2028
+Current Balance: $39,949.37
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Anne Hathaway			Account Number: 410010
+Account Type: Commercial
+Current Balance: $66,722.27
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Kevin Estre			Account Number: 310034
+Account Type: CD			Maturity Date: 3/14/2028
+Current Balance: $0.00			Transaction Amount: $5,186.08
+Cannot deposit into a CD after opening
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Tom Brady			Account Number: 110007
+Account Type: Checking
+Account Balance: $10,802.37		| Amount to Deposit: $8,574.27
+New Balance: $19,376.63
+</pre>
+<pre>
+Transaction Requested: Re-Open Account
+Client Name: LeVar Burton			Account Number: 310015
+Account Type: CD			Maturity Date: 7/29/2028
+Current Balance: $52,187.21			Transaction Amount: $0.00
+Account already open.
+</pre>
+<pre>
+Transaction Requested: Credit Transaction
+Client Name: Patrick Mahomes			Account Number: 510022
+Account Type: Brokerage
+Credit Amount: $3,082.08		Balance Due: $3,082.08
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Kevin Estre			Account Number: 310033
+Account Type: CD			Maturity Date: 3/7/2021
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Lewis Hamilton			Account Number: 310001
+Account Type: CD			Maturity Date: 1/28/2034
+Account Balance: $67,640.70		| Amount to Deposit: $23,678.96
+New Balance: $91,319.66
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: LeVar Burton			Account Number: 310015
+Account Type: CD			Maturity Date: 7/29/2028
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Leonardo DiCaprio			Account Number: 310025
+Account Type: CD			Maturity Date: 3/8/2025
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Client Information
+Client Name: Patrick Mahomes			Account Number: 110019
+Account Type: Checking
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Patrick Mahomes     789012345   110019       Checking        Open    $40,653.57
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Withdrawl           $19,143.29  Done      $40,653.57                    
+
+****************************************************************************************************
+						Number of Accounts: 1
+</pre>
+<pre>
+Transaction Requested: Re-Open Account
+Client Name: Patrick Mahomes			Account Number: 510022
+Account Type: Brokerage
+Current Balance: $86,537.19			Transaction Amount: $0.00
+Account already open.
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Matthew Holliday			Account Number: 210038
+Account Type: Savings
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Kevin Estre			Account Number: 310033
+Account Type: CD			Maturity Date: 3/7/2021
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kevin Estre         374638239   310033       CD              Closed       $0.00       3/7/2021
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Max Verstappen			Account Number: 510014
+Account Type: Brokerage
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Client Information
+Client Name: Patrick Mahomes			Account Number: 110021
+Account Type: Checking
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Patrick Mahomes     128374950   310020       CD              Open    $79,589.31      10/8/2020
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Patrick Mahomes     128374950   110021       Checking        Open    $36,938.39
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Patrick Mahomes     128374950   510022       Brokerage       Open    $86,537.19
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+						Number of Accounts: 3
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Patrick Mahomes			Account Number: 310020
+Account Type: CD			Maturity Date: 10/8/2020
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Clear Check
+Client Name: Patrick Mahomes			Account Number: 110019
+Account Type: Checking
+Account Balance: $40,653.57		| Amount of Check: $7,713.34
+New Balance: $32,940.22
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Patrick Mahomes			Account Number: 510022
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Patrick Mahomes     128374950   510022       Brokerage       Open    $86,537.19          $0.00
+
+		******************** Investment Portfolio ********************
+Bond
+Quantity: 16
+Face Value: $1,000.00
+Coupon: 8.10818%
+Maturity Date: 1/28/2041	Total Value: $16,000.00
+
+Ticker: #BLK
+Shares: 371
+Price: $499.45			Total Value: $185,295.56
+
+Ticker: #BA
+Shares: 298
+Price: $780.54			Total Value: $232,602.12
+
+Option: Call
+Contracts: 19
+Premium: $14.44		Total Value: $27,433.65
+
+Option: Call
+Contracts: 1
+Premium: $13.21		Total Value: $1,320.89
+
+Bond
+Quantity: 45
+Face Value: $1,000.00
+Coupon: 6.56013%
+Maturity Date: 1/28/2047	Total Value: $45,000.00
+
+****************************************************************************************************
+						Total Value: $507,652.22
+						Total Number of Shares: 2730
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Withdrawl
+Client Name: Matthew Holliday			Account Number: 210038
+Account Type: Savings
+Current Balance: $0.00			Transaction Amount: $17,917.33
+Insufficient funds. Account has a balance of $0.00
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Kate Blanchett			Account Number: 310028
+Account Type: CD			Maturity Date: 9/24/2019
+Current Balance: $8,272.74
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Patrick Mahomes			Account Number: 510022
+Account Type: Brokerage
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Credit Transaction
+Client Name: LeVar Burton			Account Number: 410016
+Account Type: Commercial
+Credit Amount: $920.94		Balance Due: $920.94
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Alexander Hamilton			Account Number: 510032
+Account Type: Brokerage
+Current Balance: $94,778.39
+</pre>
+<pre>
+Transaction Requested: Re-Open Account
+Client Name: Kevin Estre			Account Number: 310033
+Account Type: CD			Maturity Date: 3/7/2021
+Account Open
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Michael Jackson			Account Number: 210042
+Account Type: Savings
+Current Balance: $76,576.81
+</pre>
+<pre>
+Transaction Requested: Credit Transaction
+Client Name: Anne Hathaway			Account Number: 410012
+Account Type: Commercial
+Credit Amount: $2,586.60		Balance Due: $2,586.60
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Tom Brady			Account Number: 310009
+Account Type: CD			Maturity Date: 3/9/2029
+Current Balance: $25,897.35			Transaction Amount: $232.00
+Cannot deposit into a CD after opening
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Matthew Holliday			Account Number: 410037
+Account Type: Commercial
+Current Balance: $33,125.93
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Barack Obama			Account Number: 310024
+Account Type: CD			Maturity Date: 10/11/2021
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Barack Obama        890123456   310024       CD              Open     $8,269.57     10/11/2021
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Client Information
+Client Name: Kate Blanchett			Account Number: 210030
+Account Type: Savings
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kate Blanchett      223344556   410029       Commercial      Open    $58,631.62
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kate Blanchett      223344556   210030       Savings         Open    $18,286.01
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+						Number of Accounts: 2
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Anne Hathaway			Account Number: 410010
+Account Type: Commercial
+Current Balance: $66,722.27
+</pre>
+<pre>
+Transaction Requested: Client Information
+Client Name: LeVar Burton			Account Number: 310015
+Account Type: CD			Maturity Date: 7/29/2028
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310015       CD              Closed       $0.00      7/29/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Transaction History $0.00       Done      $52,187.21
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310015       CD              Open    $52,187.21      7/29/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   410016       Commercial      Open    $34,976.32
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   410017       Commercial      Open    $29,452.68
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Balance             $0.00       Done      $29,452.68                    
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310018       CD              Open    $15,142.64     10/15/2019
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+						Number of Accounts: 4
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Anne Hathaway			Account Number: 410012
+Account Type: Commercial
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Anne Hathaway			Account Number: 410012
+Account Type: Commercial
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Anne Hathaway			Account Number: 410010
+Account Type: Commercial
+Account Balance: $66,722.27		| Amount to Deposit: $14,647.49
+New Balance: $81,369.76
+</pre>
+<pre>
+Transaction Requested: Re-Open Account
+Client Name: Kevin Estre			Account Number: 310033
+Account Type: CD			Maturity Date: 3/7/2021
+Current Balance: $0.00			Transaction Amount: $0.00
+Account already open.
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Ben Miesalas			Account Number: 510006
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Ben Miesalas        234567890   510006       Brokerage       Open    $70,282.63          $0.00
+
+		******************** Investment Portfolio ********************
+Ticker: #DIS
+Shares: 301
+Price: $935.93			Total Value: $281,715.38
+
+Bond
+Quantity: 13
+Face Value: $1,000.00
+Coupon: 3.2799%
+Maturity Date: 1/28/2032	Total Value: $13,000.00
+
+Bond
+Quantity: 10
+Face Value: $1,000.00
+Coupon: 3.90771%
+Maturity Date: 1/28/2032	Total Value: $10,000.00
+
+Option: Put
+Contracts: 6
+Premium: $1.39		Total Value: $836.83
+
+Option: Call
+Contracts: 18
+Premium: $1.58		Total Value: $2,841.05
+
+Option: Call
+Contracts: 17
+Premium: $14.84		Total Value: $25,222.92
+
+Ticker: #DIS
+Shares: 337
+Price: $654.35			Total Value: $220,514.47
+
+Option: Put
+Contracts: 12
+Premium: $14.65		Total Value: $17,585.31
+
+Ticker: #AMZN
+Shares: 10
+Price: $598.66			Total Value: $5,986.56
+
+****************************************************************************************************
+						Total Value: $577,702.52
+						Total Number of Shares: 5971
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Leonardo DiCaprio			Account Number: 310025
+Account Type: CD			Maturity Date: 3/8/2025
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Leonardo DiCaprio   894648589   310025       CD              Closed       $0.00       3/8/2025
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Leonardo DiCaprio			Account Number: 310025
+Account Type: CD			Maturity Date: 3/8/2025
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Leonardo DiCaprio   894648589   310025       CD              Closed       $0.00       3/8/2025
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+1/28/2026    Transaction History $0.00       Done      $0.00     
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Leonardo DiCaprio   894648589   310025       CD              Closed       $0.00       3/8/2025
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+
+
+</pre>
+<pre>
+Transaction Requested: Withdrawl
+Client Name: Michael Jackson			Account Number: 210040
+Account Type: Savings
+Account Balance: $84,908.59		| Amount to Withdraw: $22,384.35
+New Balance: $62,524.24
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Kevin Estre			Account Number: 110036
+Account Type: Checking
+Current Balance: $22,157.08
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Anne Hathaway			Account Number: 410012
+Account Type: Commercial
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Kate Blanchett			Account Number: 210030
+Account Type: Savings
+Account Balance: $18,286.01		| Amount to Deposit: $14,319.51
+New Balance: $32,605.51
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Max Verstappen			Account Number: 310013
+Account Type: CD			Maturity Date: 7/28/2028
+Current Balance: $39,949.37
+</pre>
+<pre>
+Transaction Requested: Re-Open Account
+Client Name: Leonardo DiCaprio			Account Number: 310025
+Account Type: CD			Maturity Date: 3/8/2025
+Account Open
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Alexander Hamilton			Account Number: 110031
+Account Type: Checking
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Tom Brady			Account Number: 110007
+Account Type: Checking
+Account Balance: $19,376.63		| Amount to Deposit: $19,180.03
+New Balance: $38,556.66
+</pre>
+<pre>
+Transaction Requested: Credit Transaction
+Client Name: Alexander Hamilton			Account Number: 510032
+Account Type: Brokerage
+Current Balance: $94,778.39			Transaction Amount: $4,432.22
+Over spending limit reached for card level: Gold
+</pre>
+<pre>
+Transaction Requested: Withdrawl
+Client Name: Patrick Mahomes			Account Number: 110019
+Account Type: Checking
+Account Balance: $32,940.22		| Amount to Withdraw: $16,311.40
+New Balance: $16,628.82
+</pre>
+<pre>
+Transaction Requested: Withdrawl
+Client Name: Tom Brady			Account Number: 310009
+Account Type: CD			Maturity Date: 3/9/2029
+Current Balance: $25,897.35			Transaction Amount: $11,812.03
+Maturity Date: 3/9/2029 not reached yet.
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Kevin Estre			Account Number: 110036
+Account Type: Checking
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kevin Estre         374638239   110036       Checking        Open    $22,157.08
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Withdrawl           $2,434.07   Done      $22,157.08                    
+1/28/2026    Balance             $0.00       Done      $22,157.08                    
+
+</pre>
+<pre>
+Transaction Requested: Withdrawl
+Client Name: LeVar Burton			Account Number: 310015
+Account Type: CD			Maturity Date: 7/29/2028
+Current Balance: $0.00			Transaction Amount: $188.51
+Maturity Date: 7/29/2028 not reached yet.
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Patrick Mahomes			Account Number: 510022
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Patrick Mahomes     128374950   510022       Brokerage       Open    $86,537.19          $0.00
+
+		******************** Investment Portfolio ********************
+Bond
+Quantity: 16
+Face Value: $1,000.00
+Coupon: 8.10818%
+Maturity Date: 1/28/2041	Total Value: $16,000.00
+
+Ticker: #BLK
+Shares: 371
+Price: $499.45			Total Value: $185,295.56
+
+Ticker: #BA
+Shares: 298
+Price: $780.54			Total Value: $232,602.12
+
+Option: Call
+Contracts: 19
+Premium: $14.44		Total Value: $27,433.65
+
+Option: Call
+Contracts: 1
+Premium: $13.21		Total Value: $1,320.89
+
+Bond
+Quantity: 45
+Face Value: $1,000.00
+Coupon: 6.56013%
+Maturity Date: 1/28/2047	Total Value: $45,000.00
+
+****************************************************************************************************
+						Total Value: $507,652.22
+						Total Number of Shares: 2730
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Max Verstappen			Account Number: 310013
+Account Type: CD			Maturity Date: 7/28/2028
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Max Verstappen      567890123   310013       CD              Open    $39,949.37      7/28/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Balance             $0.00       Done      $39,949.37                    
+1/28/2026    Balance             $0.00       Done      $39,949.37                    
+
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Matthew Holliday			Account Number: 110039
+Account Type: Checking
+Current Balance: $31,142.31
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Patrick Mahomes			Account Number: 110019
+Account Type: Checking
+Current Balance: $16,628.82
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Lewis Hamilton			Account Number: 110004
+Account Type: Checking
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Lewis Hamilton      123456789   110004       Checking        Open    $60,477.95
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Credit Transaction
+Client Name: Anne Hathaway			Account Number: 410012
+Account Type: Commercial
+Current Balance: $28,446.45			Transaction Amount: $1,678.40
+Over spending limit reached for card level: Basic
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Anne Hathaway			Account Number: 310011
+Account Type: CD			Maturity Date: 11/23/2020
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Anne Hathaway       456789012   310011       CD              Open    $40,442.96     11/23/2020
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Michael Jackson			Account Number: 210040
+Account Type: Savings
+Account Balance: $62,524.24		| Amount to Deposit: $10,094.94
+New Balance: $72,619.18
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Max Verstappen			Account Number: 310013
+Account Type: CD			Maturity Date: 7/28/2028
+Current Balance: $39,949.37			Transaction Amount: $13,586.47
+Cannot deposit into a CD after opening
+</pre>
+<pre>
+Transaction Requested: Re-Open Account
+Client Name: Michael Jackson			Account Number: 210040
+Account Type: Savings
+Current Balance: $72,619.18			Transaction Amount: $0.00
+Account already open.
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: LeVar Burton			Account Number: 410016
+Account Type: Commercial
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Anne Hathaway			Account Number: 410010
+Account Type: Commercial
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Tom Brady			Account Number: 310009
+Account Type: CD			Maturity Date: 3/9/2029
+Current Balance: $25,897.35
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Patrick Mahomes			Account Number: 110019
+Account Type: Checking
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Patrick Mahomes     789012345   110019       Checking        Open    $16,628.82
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Withdrawl           $19,143.29  Done      $40,653.57                    
+1/28/2026    Client Information  $0.00       Done      $40,653.57
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Patrick Mahomes     789012345   110019       Checking        Open    $40,653.57
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Withdrawl           $19,143.29  Done      $40,653.57                    
+
+****************************************************************************************************
+						Number of Accounts: 1
+1/28/2026    Clear Check         $7,713.34   Done      $32,940.22                    
+1/28/2026    Withdrawl           $16,311.40  Done      $16,628.82                    
+1/28/2026    Balance             $0.00       Done      $16,628.82                    
+
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Patrick Mahomes			Account Number: 110021
+Account Type: Checking
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Max Verstappen			Account Number: 310013
+Account Type: CD			Maturity Date: 7/28/2028
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Clear Check
+Client Name: Patrick Mahomes			Account Number: 110019
+Account Type: Checking
+Current Balance: $16,626.32			Transaction Amount: $27,666.47
+Insufficient funds. Account has a balance of 16628.819146
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Patrick Mahomes			Account Number: 310020
+Account Type: CD			Maturity Date: 1/28/2050
+Account Balance: $0.00		| Amount to Deposit: $7,789.59
+New Balance: $7,789.59
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Kevin Estre			Account Number: 310033
+Account Type: CD			Maturity Date: 3/7/2021
+Current Balance: $0.00
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Lamar Jackson			Account Number: 110027
+Account Type: Checking
+Current Balance: $48,048.82
+</pre>
+<pre>
+Transaction Requested: Clear Check
+Client Name: Matthew Holliday			Account Number: 110039
+Account Type: Checking
+Current Balance: $31,142.31			Transaction Amount: $26,870.89
+Check is Post Dated
+</pre>
+<pre>
+Transaction Requested: Transaction History
+Client Name: Kevin Estre			Account Number: 310033
+Account Type: CD			Maturity Date: 3/7/2021
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kevin Estre         374638239   310033       CD              Open         $0.00       3/7/2021
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+1/28/2026    Transaction History $0.00       Done      $0.00     
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Kevin Estre         374638239   310033       CD              Closed       $0.00       3/7/2021
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+
+1/28/2026    Re-Open Account     $0.00       Done      $0.00                         
+1/28/2026    Balance             $0.00       Done      $0.00                         
+
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Patrick Mahomes			Account Number: 510022
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Patrick Mahomes     128374950   510022       Brokerage       Open    $86,537.19          $0.00
+
+		******************** Investment Portfolio ********************
+Bond
+Quantity: 16
+Face Value: $1,000.00
+Coupon: 8.10818%
+Maturity Date: 1/28/2041	Total Value: $16,000.00
+
+Ticker: #BLK
+Shares: 371
+Price: $499.45			Total Value: $185,295.56
+
+Ticker: #BA
+Shares: 298
+Price: $780.54			Total Value: $232,602.12
+
+Option: Call
+Contracts: 19
+Premium: $14.44		Total Value: $27,433.65
+
+Option: Call
+Contracts: 1
+Premium: $13.21		Total Value: $1,320.89
+
+Bond
+Quantity: 45
+Face Value: $1,000.00
+Coupon: 6.56013%
+Maturity Date: 1/28/2047	Total Value: $45,000.00
+
+****************************************************************************************************
+						Total Value: $507,652.22
+						Total Number of Shares: 2730
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: LeVar Burton			Account Number: 410017
+Account Type: Commercial
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Ben Miesalas			Account Number: 510006
+Account Type: Brokerage
+Current Balance: $70,282.63
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Ben Miesalas			Account Number: 510006
+Account Type: Brokerage
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Clear Check
+Client Name: Tom Brady			Account Number: 110007
+Account Type: Checking
+Current Balance: $38,556.66			Transaction Amount: $5,522.06
+Check is Post Dated
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Patrick Mahomes			Account Number: 310020
+Account Type: CD			Maturity Date: 1/28/2050
+Current Balance: $7,789.59
+</pre>
+<pre>
+Transaction Requested: Close Account
+Client Name: Michael Jackson			Account Number: 510041
+Account Type: Brokerage
+Account Closed
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Kate Blanchett			Account Number: 310028
+Account Type: CD			Maturity Date: 9/24/2019
+Current Balance: $8,272.74
+</pre>
+<pre>
+Transaction Requested: Client Information
+Client Name: Matthew Holliday			Account Number: 410037
+Account Type: Commercial
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   410037       Commercial      Open    $33,125.93
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Balance             $0.00       Done      $33,125.93                    
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   210038       Savings         Closed       $0.00
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Transaction History $0.00       Done      $7,405.56 
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   210038       Savings         Open     $7,405.56
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+1/28/2026    Transaction History $0.00       Done      $7,405.56 
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   210038       Savings         Open     $7,405.56
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Transaction History $0.00       Done      $7,405.56 
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   210038       Savings         Open     $7,405.56
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+Matthew Holliday    998877665   110039       Checking        Open    $31,142.31
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Balance             $0.00       Done      $31,142.31                    
+
+****************************************************************************************************
+						Number of Accounts: 3
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Max Verstappen			Account Number: 310013
+Account Type: CD			Maturity Date: 7/28/2028
+Current Balance: $0.00
+</pre>
+<pre>
+Transaction Requested: Client Information
+Client Name: LeVar Burton			Account Number: 310015
+Account Type: CD			Maturity Date: 7/29/2028
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310015       CD              Closed       $0.00      7/29/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Transaction History $0.00       Done      $52,187.21
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310015       CD              Open    $52,187.21      7/29/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+1/28/2026    Client Information  $0.00       Done      $0.00     
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310015       CD              Closed       $0.00      7/29/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Transaction History $0.00       Done      $52,187.21
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310015       CD              Open    $52,187.21      7/29/2028
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+1/28/2026    Close Account       $0.00       Done      $0.00                         
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   410016       Commercial      Open    $34,976.32
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   410017       Commercial      Open    $29,452.68
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Balance             $0.00       Done      $29,452.68                    
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310018       CD              Open    $15,142.64     10/15/2019
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+						Number of Accounts: 4
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   410016       Commercial      Open    $34,976.32
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   410017       Commercial      Open    $29,452.68
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Balance             $0.00       Done      $29,452.68                    
+
+****************************************************************************************************
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance
+LeVar Burton        678901234   310018       CD              Open    $15,142.64     10/15/2019
+
+
+		******************** Transaction History ********************
+ Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+****************************************************************************************************
+						Number of Accounts: 4
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Alexander Hamilton			Account Number: 510032
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Alexander Hamilton  253646739   510032       Brokerage       Open    $94,778.39          $0.00
+
+		******************** Investment Portfolio ********************
+Option: Call
+Contracts: 8
+Premium: $1.99		Total Value: $1,592.49
+
+Ticker: #BA
+Shares: 7
+Price: $250.84			Total Value: $1,755.90
+
+Option: Call
+Contracts: 7
+Premium: $2.15		Total Value: $1,504.70
+
+Bond
+Quantity: 49
+Face Value: $1,000.00
+Coupon: 3.45591%
+Maturity Date: 1/28/2039	Total Value: $49,000.00
+
+Option: Call
+Contracts: 7
+Premium: $2.69		Total Value: $1,885.32
+
+Ticker: #CDNS
+Shares: 79
+Price: $931.56			Total Value: $73,593.27
+
+Ticker: #MSFT
+Shares: 295
+Price: $308.19			Total Value: $90,916.01
+
+Bond
+Quantity: 33
+Face Value: $1,000.00
+Coupon: 3.56663%
+Maturity Date: 1/28/2055	Total Value: $33,000.00
+
+Ticker: #AMZN
+Shares: 74
+Price: $532.56			Total Value: $39,409.79
+
+****************************************************************************************************
+						Total Value: $292,657.49
+						Total Number of Shares: 2737
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+1/28/2026    Balance             $0.00       Done      $94,778.39                    
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: LeVar Burton			Account Number: 410017
+Account Type: Commercial
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<h1>Bank Database</h1>
+<pre>
+<b>Name</b>                <b>SSN</b>         <b>Account#</b>     <b>Type</b>           <b>Status</b>   <b>Balance</b>        <b>Maturity Date</b>
+****************************************************************************************************
+Lewis Hamilton      123456789   310001       CD              Open    $91,319.66      1/28/2034
+Lewis Hamilton      123456789   310002       CD              Open    $72,657.78      8/15/2025
+Lewis Hamilton      123456789   310003       CD              Open    $44,665.56     11/23/2021
+Lewis Hamilton      123456789   110004       Checking        Open    $60,477.95
+Ben Miesalas        234567890   310005       CD              Open    $61,202.92      7/20/2019
+Ben Miesalas        234567890   510006       Brokerage       Open    $70,282.63
+Tom Brady           345678901   110007       Checking        Open    $38,556.66
+Tom Brady           345678901   110008       Checking        Open    $99,586.01
+Tom Brady           345678901   310009       CD              Open    $25,897.35       3/9/2029
+Anne Hathaway       456789012   410010       Commercial      Open    $81,369.76
+Anne Hathaway       456789012   310011       CD              Open    $40,442.96     11/23/2020
+Anne Hathaway       456789012   410012       Commercial      Open    $28,446.45
+Max Verstappen      567890123   310013       CD              Closed       $0.00      7/28/2028
+Max Verstappen      567890123   510014       Brokerage       Closed       $0.00
+LeVar Burton        678901234   310015       CD              Closed       $0.00      7/29/2028
+LeVar Burton        678901234   410016       Commercial      Open    $34,976.32
+LeVar Burton        678901234   410017       Commercial      Open    $29,452.68
+LeVar Burton        678901234   310018       CD              Open    $15,142.64     10/15/2019
+Patrick Mahomes     789012345   110019       Checking        Open    $16,626.32
+Patrick Mahomes     128374950   310020       CD              Closed   $7,789.59      1/28/2050
+Patrick Mahomes     128374950   110021       Checking        Closed       $0.00
+Patrick Mahomes     128374950   510022       Brokerage       Open    $86,537.19
+Barack Obama        890123456   510023       Brokerage       Open    $23,249.32
+Barack Obama        890123456   310024       CD              Open     $8,269.57     10/11/2021
+Leonardo DiCaprio   894648589   310025       CD              Open         $0.00       3/8/2025
+Lamar Jackson       901234567   110026       Checking        Open    $21,095.44
+Lamar Jackson       901234567   110027       Checking        Open    $48,048.82
+Kate Blanchett      112233445   310028       CD              Open     $8,272.74      9/24/2019
+Kate Blanchett      223344556   410029       Commercial      Open    $58,631.62
+Kate Blanchett      223344556   210030       Savings         Open    $32,605.51
+Alexander Hamilton  253646739   110031       Checking        Closed       $0.00
+Alexander Hamilton  253646739   510032       Brokerage       Open    $94,778.39
+Kevin Estre         374638239   310033       CD              Open         $0.00       3/7/2021
+Kevin Estre         374638239   310034       CD              Closed       $0.00      3/14/2028
+Kevin Estre         374638239   110035       Checking        Open    $87,363.79
+Kevin Estre         374638239   110036       Checking        Open    $22,157.08
+Matthew Holliday    998877665   410037       Commercial      Open    $33,125.93
+Matthew Holliday    998877665   210038       Savings         Closed       $0.00
+Matthew Holliday    998877665   110039       Checking        Open    $31,142.31
+Michael Jackson     887766554   210040       Savings         Open    $72,619.18
+Michael Jackson     887766554   510041       Brokerage       Closed       $0.00
+Michael Jackson     887766554   210042       Savings         Open    $76,576.81
+****************************************************************************************************
+Total Number of Checking Accounts: 11
+Total Number of Savings Accounts: 4
+Total Number of CD Accounts: 15
+Total Number of Commercial Accounts: 6
+Total Number of Brokerage Accounts: 6
+Total Number of Credit Accounts: 6
+
+							Checking Account Total Balance: $529,166.45
+							Savings Account Total Balance: $189,207.06
+							CD Account Total Balance: $704,275.95
+							Commercial Account Total Balance: $266,002.76
+							Brokerage Account Total Balance: $347,235.08
+							Credit Account Total Balance: $6,589.61
+****************************************************************************************************
+							Total Number of Accounts: 42
+							Total Assests Under Management: $2,029,297.70
+****************************************************************************************************
+
+</body>
+</html>
