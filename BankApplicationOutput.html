@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bank Database</title>
+<style>
+body { font-family: monospace; }
+pre { margin-bottom: 30px; }
+</style>
+</head>
+<body>
+<b>Number Of Transactions: </b>10
+
+<h1>Bank Database</h1>
+<pre>
+<b>Name</b>                <b>SSN</b>         <b>Account#</b>     <b>Type</b>           <b>Status</b>   <b>Balance</b>        <b>Maturity Date</b>
+****************************************************************************************************
+Lewis Hamilton      121212121   310001    CD             Open        $59,047.21      6/12/2025
+Lewis Hamilton      121212121   210002    Savings        Open         $6,724.12
+Lewis Hamilton      121212121   110003    Checking       Open        $45,896.31
+Lewis Hamilton      121212121   110004    Checking       Open        $37,643.31
+Sebastian Priaulx   131313131   310005    CD             Open        $99,795.09       4/5/2024
+Sebastian Priaulx   131313131   410006    Commercial     Open        $21,550.62
+Mathias Lauda       454545454   510007    Brokerage      Open        $60,370.73
+Mathias Lauda       454545454   210008    Savings        Open        $44,835.47
+Mathias Lauda       454545454   510009    Brokerage      Open        $65,216.56
+Sebastian Buemi     012012012   110010    Checking       Open        $59,367.33
+Sebastian Buemi     012012012   510011    Brokerage      Open         $8,851.97
+Sebastian Buemi     012012012   510012    Brokerage      Open         $3,878.77
+Max Verstappen      991777991   510013    Brokerage      Open        $45,404.63
+Max Verstappen      991777991   510014    Brokerage      Open        $42,497.23
+Nicolas Lapierre    543543543   410015    Commercial     Open        $22,320.89
+Nicolas Lapierre    543543543   410016    Commercial     Open        $81,484.90
+Nicolas Lapierre    543543543   210017    Savings        Open        $54,689.94
+Nicolas Lapierre    543543543   210018    Savings        Open        $60,168.00
+Michael Auriemma    789789789   410019    Commercial     Open        $34,467.21
+Riley Dickinson     200120010   210020    Savings        Open        $55,063.86
+Riley Dickinson     200120010   510021    Brokerage      Open        $64,866.39
+Riley Dickinson     200120010   210022    Savings        Open        $76,871.31
+Ashley Freiberg     987654321   110023    Checking       Open        $68,901.00
+Ashley Freiberg     987654321   310024    CD             Open        $37,425.21      3/24/2020
+Madeline Stewart    151515151   510025    Brokerage      Open        $33,946.11
+Alexandra Veteva    787878787   410026    Commercial     Open        $89,865.47
+Alexandra Vetava    787878787   410027    Commercial     Open        $92,373.43
+Michael Schumacher  123456789   110028    Checking       Open         $2,360.09
+Michael Schumacher  123456789   510029    Brokerage      Open        $61,508.71
+Michael Schumacher  123456789   210030    Savings        Open        $40,252.49
+Fernando Alonso     977977977   410031    Commercial     Open        $61,599.26
+Fernando Alonso     977977977   110032    Checking       Open        $40,784.43
+Kevin Estre         911911911   510033    Brokerage      Open        $61,370.80
+Kevin Estre         911911911   510034    Brokerage      Open        $47,699.34
+Kevin Estre         911911911   410035    Commercial     Open        $32,704.82
+Kevin Estre         911911911   310036    CD             Open        $79,236.01      9/24/2029
+Sebastian Vettel    123789123   110037    Checking       Open        $27,637.06
+Sebastian Vettel    123789123   310038    CD             Open         $2,851.24      9/27/2025
+Sebastian Vettel    123789123   510039    Brokerage      Open        $51,550.31
+Niki Lauda          460460460   410040    Commercial     Open        $82,418.98
+Niki Lauda          460460460   110041    Checking       Open        $69,844.82
+Niki Lauda          460460460   410042    Commercial     Open        $53,570.57
+****************************************************************************************************
+Total Number of Checking Accounts: 8
+Total Number of Savings Accounts: 7
+Total Number of CD Accounts: 5
+Total Number of Commercial Accounts: 10
+Total Number of Brokerage Accounts: 12
+Total Number of Credit Accounts: 12
+
+							Checking Account Total Balance: $352,434.36
+							Savings Account Total Balance: $338,605.19
+							CD Account Total Balance: $278,354.76
+							Commercial Account Total Balance: $572,356.17
+							Brokerage Account Total Balance: $547,161.56
+							Credit Account Total Balance: $0.00
+****************************************************************************************************
+							Total Number of Accounts: 42
+							Total Assests Under Management: $2,088,912.04
+****************************************************************************************************
+<pre>
+Transaction Requested: Portolio
+Client Name: Max Verstappen			Account Number: 510014
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Max Verstappen      991777991   510014    Brokerage      Open        $42,497.23          $0.00
+
+		******************** Investment Portfolio ********************
+Bond
+Quantity: 17
+Face Value: $1,000.00
+Coupon: 6.05962%
+Maturity Date: 2/23/2039	Total Value: $17,000.00
+
+Option: Call
+Contracts: 18
+Premium: $4.31		Total Value: $7,758.58
+
+Option: Call
+Contracts: 7
+Premium: $4.47		Total Value: $3,125.88
+
+Bond
+Quantity: 5
+Face Value: $1,000.00
+Coupon: 5.83089%
+Maturity Date: 2/23/2038	Total Value: $5,000.00
+
+Option: Put
+Contracts: 8
+Premium: $4.47		Total Value: $3,577.49
+
+Ticker: #GOOG
+Shares: 112
+Price: $585.45			Total Value: $65,570.87
+
+Option: Put
+Contracts: 12
+Premium: $11.42		Total Value: $13,706.44
+
+****************************************************************************************************
+						Total Value: $115,739.26
+						Total Number of Shares: 4634
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Michael Schumacher			Account Number: 510029
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Michael Schumacher  123456789   510029    Brokerage      Open        $61,508.71          $0.00
+
+		******************** Investment Portfolio ********************
+Bond
+Quantity: 45
+Face Value: $1,000.00
+Coupon: 7.927%
+Maturity Date: 2/23/2028	Total Value: $45,000.00
+
+Ticker: #BLK
+Shares: 394
+Price: $982.44			Total Value: $387,082.00
+
+Bond
+Quantity: 12
+Face Value: $1,000.00
+Coupon: 6.22728%
+Maturity Date: 2/23/2032	Total Value: $12,000.00
+
+Option: Call
+Contracts: 11
+Premium: $1.05		Total Value: $1,155.34
+
+Ticker: #AAPL
+Shares: 55
+Price: $938.77			Total Value: $51,632.56
+
+Bond
+Quantity: 5
+Face Value: $1,000.00
+Coupon: 8.11362%
+Maturity Date: 2/23/2055	Total Value: $5,000.00
+
+Ticker: #VZ
+Shares: 139
+Price: $640.55			Total Value: $89,037.08
+
+Option: Call
+Contracts: 13
+Premium: $5.46		Total Value: $7,101.01
+
+****************************************************************************************************
+						Total Value: $598,007.99
+						Total Number of Shares: 3050
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Kevin Estre			Account Number: 510033
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Kevin Estre         911911911   510033    Brokerage      Open        $61,370.80          $0.00
+
+		******************** Investment Portfolio ********************
+Option: Put
+Contracts: 12
+Premium: $7.58		Total Value: $9,090.13
+
+Bond
+Quantity: 12
+Face Value: $1,000.00
+Coupon: 2.13064%
+Maturity Date: 2/23/2054	Total Value: $12,000.00
+
+Bond
+Quantity: 40
+Face Value: $1,000.00
+Coupon: 3.43901%
+Maturity Date: 2/23/2028	Total Value: $40,000.00
+
+Ticker: #NFLX
+Shares: 300
+Price: $555.21			Total Value: $166,564.12
+
+Option: Call
+Contracts: 8
+Premium: $8.43		Total Value: $6,741.26
+
+Bond
+Quantity: 43
+Face Value: $1,000.00
+Coupon: 8.26559%
+Maturity Date: 2/23/2038	Total Value: $43,000.00
+
+Bond
+Quantity: 46
+Face Value: $1,000.00
+Coupon: 4.80038%
+Maturity Date: 2/23/2056	Total Value: $46,000.00
+
+****************************************************************************************************
+						Total Value: $323,395.52
+						Total Number of Shares: 2441
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Clear Check
+Client Name: Lewis Hamilton			Account Number: 110004
+Account Type: Checking
+Current Balance: $37,643.31			Transaction Amount: $16,652.09
+8/5/2025 was more than 6 months ago
+</pre>
+<pre>
+Transaction Requested: Client Information
+Client Name: Riley Dickinson			Account Number: 510021
+Account Type: Brokerage
+
+Name                SSN         Acct Num  Type           Status       Balance      Maturity Date  
+****************************************************************************************************
+Riley Dickinson     200120010   210020    Savings        Open        $55,063.86
+Riley Dickinson     200120010   510021    Brokerage      Open        $64,866.39
+Riley Dickinson     200120010   210022    Savings        Open        $76,871.31
+****************************************************************************************************
+						Number of Accounts: 3
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Sebastian Buemi			Account Number: 510012
+Account Type: Brokerage
+Current Balance: $3,878.77
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Riley Dickinson			Account Number: 510021
+Account Type: Brokerage
+Current Balance: $0.00			Transaction Amount: $0.00
+ 
+</pre>
+<pre>
+Transaction Requested: Portolio
+Client Name: Max Verstappen			Account Number: 510014
+Account Type: Brokerage
+
+Client Name         SSN         Acct Num  Acct Type      Status         Balance    Balance Due
+Max Verstappen      991777991   510014    Brokerage      Open        $42,497.23          $0.00
+
+		******************** Investment Portfolio ********************
+Bond
+Quantity: 17
+Face Value: $1,000.00
+Coupon: 6.05962%
+Maturity Date: 2/23/2039	Total Value: $17,000.00
+
+Option: Call
+Contracts: 18
+Premium: $4.31		Total Value: $7,758.58
+
+Option: Call
+Contracts: 7
+Premium: $4.47		Total Value: $3,125.88
+
+Bond
+Quantity: 5
+Face Value: $1,000.00
+Coupon: 5.83089%
+Maturity Date: 2/23/2038	Total Value: $5,000.00
+
+Option: Put
+Contracts: 8
+Premium: $4.47		Total Value: $3,577.49
+
+Ticker: #GOOG
+Shares: 112
+Price: $585.45			Total Value: $65,570.87
+
+Option: Put
+Contracts: 12
+Premium: $11.42		Total Value: $13,706.44
+
+****************************************************************************************************
+						Total Value: $115,739.26
+						Total Number of Shares: 4634
+****************************************************************************************************
+
+				Transaction History
+
+      Date         Transaction         Amount    Status     Balance      Reason for Failure
+
+</pre>
+<pre>
+Transaction Requested: Deposit
+Client Name: Nicolas Lapierre			Account Number: 210017
+Account Type: Savings
+Account Balance: $54,689.94		| Amount to Deposit: $24,427.78
+New Balance: $79,117.72
+</pre>
+<pre>
+Transaction Requested: Balance
+Client Name: Michael Schumacher			Account Number: 110028
+Account Type: Checking
+Current Balance: $2,360.09
+</pre>
+<h1>Bank Database</h1>
+<pre>
+<b>Name</b>                <b>SSN</b>         <b>Account#</b>     <b>Type</b>           <b>Status</b>   <b>Balance</b>        <b>Maturity Date</b>
+****************************************************************************************************
+Lewis Hamilton      121212121   310001    CD             Open        $59,047.21      6/12/2025
+Lewis Hamilton      121212121   210002    Savings        Open         $6,724.12
+Lewis Hamilton      121212121   110003    Checking       Open        $45,896.31
+Lewis Hamilton      121212121   110004    Checking       Open        $37,643.31
+Sebastian Priaulx   131313131   310005    CD             Open        $99,795.09       4/5/2024
+Sebastian Priaulx   131313131   410006    Commercial     Open        $21,550.62
+Mathias Lauda       454545454   510007    Brokerage      Open        $60,370.73
+Mathias Lauda       454545454   210008    Savings        Open        $44,835.47
+Mathias Lauda       454545454   510009    Brokerage      Open        $65,216.56
+Sebastian Buemi     012012012   110010    Checking       Open        $59,367.33
+Sebastian Buemi     012012012   510011    Brokerage      Open         $8,851.97
+Sebastian Buemi     012012012   510012    Brokerage      Open         $3,878.77
+Max Verstappen      991777991   510013    Brokerage      Open        $45,404.63
+Max Verstappen      991777991   510014    Brokerage      Open        $42,497.23
+Nicolas Lapierre    543543543   410015    Commercial     Open        $22,320.89
+Nicolas Lapierre    543543543   410016    Commercial     Open        $81,484.90
+Nicolas Lapierre    543543543   210017    Savings        Open        $79,117.72
+Nicolas Lapierre    543543543   210018    Savings        Open        $60,168.00
+Michael Auriemma    789789789   410019    Commercial     Open        $34,467.21
+Riley Dickinson     200120010   210020    Savings        Open        $55,063.86
+Riley Dickinson     200120010   510021    Brokerage      Open        $64,866.39
+Riley Dickinson     200120010   210022    Savings        Open        $76,871.31
+Ashley Freiberg     987654321   110023    Checking       Open        $68,901.00
+Ashley Freiberg     987654321   310024    CD             Open        $37,425.21      3/24/2020
+Madeline Stewart    151515151   510025    Brokerage      Open        $33,946.11
+Alexandra Veteva    787878787   410026    Commercial     Open        $89,865.47
+Alexandra Vetava    787878787   410027    Commercial     Open        $92,373.43
+Michael Schumacher  123456789   110028    Checking       Open         $2,360.09
+Michael Schumacher  123456789   510029    Brokerage      Open        $61,508.71
+Michael Schumacher  123456789   210030    Savings        Open        $40,252.49
+Fernando Alonso     977977977   410031    Commercial     Open        $61,599.26
+Fernando Alonso     977977977   110032    Checking       Open        $40,784.43
+Kevin Estre         911911911   510033    Brokerage      Open        $61,370.80
+Kevin Estre         911911911   510034    Brokerage      Open        $47,699.34
+Kevin Estre         911911911   410035    Commercial     Open        $32,704.82
+Kevin Estre         911911911   310036    CD             Open        $79,236.01      9/24/2029
+Sebastian Vettel    123789123   110037    Checking       Open        $27,637.06
+Sebastian Vettel    123789123   310038    CD             Open         $2,851.24      9/27/2025
+Sebastian Vettel    123789123   510039    Brokerage      Open        $51,550.31
+Niki Lauda          460460460   410040    Commercial     Open        $82,418.98
+Niki Lauda          460460460   110041    Checking       Open        $69,844.82
+Niki Lauda          460460460   410042    Commercial     Open        $53,570.57
+****************************************************************************************************
+Total Number of Checking Accounts: 8
+Total Number of Savings Accounts: 7
+Total Number of CD Accounts: 5
+Total Number of Commercial Accounts: 10
+Total Number of Brokerage Accounts: 12
+Total Number of Credit Accounts: 12
+
+							Checking Account Total Balance: $352,434.36
+							Savings Account Total Balance: $363,032.97
+							CD Account Total Balance: $278,354.76
+							Commercial Account Total Balance: $572,356.17
+							Brokerage Account Total Balance: $547,161.56
+							Credit Account Total Balance: $0.00
+****************************************************************************************************
+							Total Number of Accounts: 42
+							Total Assests Under Management: $2,113,339.82
+****************************************************************************************************
+
+</body>
+</html>
